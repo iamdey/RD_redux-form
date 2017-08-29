@@ -47,6 +47,7 @@ class App extends Component {
           {this.state.character && (
             <CharacterForm
               form={this.state.formId}
+              key={this.state.formId}
               initialValues={this.state.character}
               onSubmit={this.handleSubmit}
             />
@@ -68,11 +69,9 @@ class App extends Component {
             <p>I will work fine after unmounting the form by clicking "Unload"</p>
           </div>
           <div>
-            <h3>redux-form config</h3>
-            <ul>
-              <li><label><input type="checkbox" />enableReinitialize</label></li>
-              <li><label><input type="checkbox" />destroyOnUnmount</label></li>
-            </ul>
+            <h3>resolution</h3>
+            <p>Cf. <a href="https://github.com/erikras/redux-form/issues/2886#issuecomment-299426767">issue redux-form</a></p>
+            <p>Add <code>key</code> prop to parent component</p>
           </div>
         </div>
       </div>
