@@ -6,7 +6,7 @@ import App from './App';
 import configureStore from './store/configure-store';
 import registerServiceWorker from './registerServiceWorker';
 
-const store = configureStore(null, window.devToolsExtension && window.devToolsExtension());
+const store = configureStore({}, window.devToolsExtension && window.devToolsExtension());
 
 ReactDOM.render((
   <Provider store={store}>
