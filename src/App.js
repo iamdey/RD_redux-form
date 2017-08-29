@@ -58,6 +58,7 @@ class App extends Component {
         <div className="App-body">
           <div>
             <h2>Pbm: redux-form is broken when component tree is not unmounted.</h2>
+            <p><a href="https://github.com/iamdey/RD_redux-form/tree/bug_no-unmount">Code source</a></p>
             <h3>How to reproduce</h3>
             <ol>
               <li>click "Load Zoidberg"</li>
